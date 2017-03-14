@@ -1,0 +1,9 @@
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+body {
+    background-color:#522D80;
+    color: #FFF;
+}
