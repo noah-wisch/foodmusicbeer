@@ -9,14 +9,14 @@ const app = angular.module('EventsApp', ['ui.router']);
 // 	}
 // });
 
-// /* Controllers */
-// const controllers = [
-// 	require('./controllers/#'),	
-// ];
+/* Controllers */
+const controllers = [
+	require('./controllers/music'),	
+];
 
-// for (let i = 0; i < controllers.length; i++) {
-// 	app.controller(controllers[i].name, controllers[i].func);
-// }
+for (let i = 0; i < controllers.length; i++) {
+	app.controller(controllers[i].name, controllers[i].func);
+}
 
 // /* Components */
 // const components = [
@@ -27,11 +27,11 @@ const app = angular.module('EventsApp', ['ui.router']);
 // 	app.component(components[i].name, components[i].func);
 // }
 
-// /* Services */
-// const services = [
-// 	require('./services/#'),
-// ];
+/* Services */
+const services = [
+	require('./services/events'),
+];
 
-// for (let i = 0; i < services.length; i++) {
-// 	app.factory(services[i].name, services[i].func);
-// }
+for (let i = 0; i < services.length; i++) {
+	app.factory(services[i].name, services[i].func);
+}
